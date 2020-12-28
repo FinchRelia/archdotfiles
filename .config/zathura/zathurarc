@@ -1,0 +1,5 @@
+set selection-clipboard clipboard
+map K zoom in
+map J zoom out
+map p print
+map i recolor
