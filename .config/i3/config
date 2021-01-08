@@ -47,7 +47,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # Screenshot
 bindsym Ctrl+Shift+Print exec --no-startup-id maim ~/Pictures/Screenshot_$(date +%d-%m-%Y_%HH%M).png
-bindsym Print exec --no-startup-id maim -o -s ~/Pictures/Screenshot_$(date +%d-%m-%Y_%HH%M).png
+bindsym Print exec --no-startup-id maim -s ~/Pictures/Screenshot_$(date +%d-%m-%Y_%HH%M).png
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
