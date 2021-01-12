@@ -41,6 +41,11 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
+# Media keys
+bindsym XF86AudioPlay exec --no-startup-id mpc toggle
+bindsym XF86AudioNext exec --no-startup-id mpc next
+bindsym XF86AudioPrev exec --no-startup-id mpc prev
+
 # Brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
@@ -48,6 +53,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 # Screenshot
 bindsym Ctrl+Shift+Print exec --no-startup-id maim ~/Pictures/Screenshot_$(date +%d-%m-%Y_%HH%M).png
 bindsym Print exec --no-startup-id maim -s ~/Pictures/Screenshot_$(date +%d-%m-%Y_%HH%M).png
+bindsym Ctrl+Print exec maim -s | xclip -selection clipboard -t image/png
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
