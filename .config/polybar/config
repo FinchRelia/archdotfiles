@@ -221,6 +221,7 @@ ramp-volume-2 = 🔊
 
 label-muted = 🔇 muted
 label-muted-foreground = #666
+click-right = pavucontrol
 
 [module/battery]
 type = internal/battery

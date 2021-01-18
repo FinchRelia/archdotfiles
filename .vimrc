@@ -5,7 +5,6 @@ runtime! archlinux.vim
 " Do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
-set nocompatible
 set autoindent
 set smartindent
 set undofile
@@ -20,6 +19,9 @@ set wildmode=longest,list,full
 " Disable automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set splitbelow splitright
+
+" Set color for spellcheck
+hi SpellBad ctermfg=red guifg=red
 
 " Make scrolling workable in st
 if &term =~ '^st\($\|-\)'
