@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Verbose
+alias \
+	cp='cp -iv' \
+	mv='mv -iv' \
+	rm='rm -vI' \
+	mkdir='mkdir -pv' \
+	cat='bat -n'
+
+# Colorize when possible
+alias \
+	ls='ls -hN --color=auto --group-directories-first' \
+	ll='ls -la' \
+	l.='ls -d .*' \
+	grep='grep --color=auto' \
+	diff='diff --color=auto' \
+	ip='ip -color=auto'
+
+# Shorteners
+alias \
+	vi='vim' \
+	p='sudo pacman' \
+	yayup='yay -Sua' \
+	SS='sudo systemctl' \
+	ports='ss -tuln' \
+	path='echo -e ${PATH//:/\\n}' \
+	erasmus='cd /home/syrell/Documents/Scolaire/Erasmus/Cours' \
+	worksync='rsync -avP /home/syrell/Documents/Scolaire/ rasp3:/home/arceus/Backup/Scolaire' # add -n for dry test and --delete to remove extra files from destination
+
+# Apps
+alias \
+	yt='youtube-dl --add-metadata -ic' \
+	yta='youtube-dl --add-metadata -icx -f bestaudio/best'
+
+# Github
+alias gitlog='eval $(ssh-agent) && ssh-add ~/.ssh/laptop_ed'
+
+# Dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/archdotfiles/ --work-tree=$HOME'
