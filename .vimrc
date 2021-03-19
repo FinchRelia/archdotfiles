@@ -88,7 +88,7 @@ autocmd FileType apache setlocal commentstring=#\ %s
 " Insert line of hashtags
 map <leader>c 80A#<Esc>d80<bar>
 " Recompile st automatically
-autocmd BufWritePost config.def.h !sudo make install
+autocmd BufWritePost config.def.h !doas make install
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>l :w! \| !compiler <c-r>%<CR>
 " Open corresponding .pdf/.html or preview
@@ -103,4 +103,4 @@ let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 
 " Save file w/o root permissions
-cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+cnoremap w!! execute 'silent! write !doas tee % >/dev/null' <bar> edit!

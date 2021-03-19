@@ -19,10 +19,12 @@ alias \
 
 # Shorteners
 alias \
+	sudo='doas' \
 	vi='vim' \
-	p='sudo pacman' \
+	p='doas pacman' \
 	yayup='yay -Sua' \
-	SS='sudo systemctl' \
+	det='setsid -f' \
+	SS='doas systemctl' \
 	ports='ss -tuln' \
 	path='echo -e ${PATH//:/\\n}' \
 	erasmus='cd /home/syrell/Documents/Scolaire/Erasmus/Cours' \

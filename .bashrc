@@ -25,7 +25,7 @@ man(){
 
 
 # Softwares
-export EDITOR="vim"
+export EDITOR="/usr/bin/vim"
 export VISUAL=$EDITOR
 export TERMINAL="st"
 export BROWSER="firefox"

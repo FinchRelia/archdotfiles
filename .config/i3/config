@@ -231,7 +231,7 @@ bindsym $mod+f exec --no-startup-id st -e ranger
 bindsym $mod+Tab exec --no-startup-id st -e htop
 
 # Discord
-bindsym $mod+Shift+d exec --no-startup-id Discord
+bindsym $mod+Shift+d exec --no-startup-id discord
 
 # Music player
 bindsym $mod+n exec --no-startup-id st -e ncmpcpp
