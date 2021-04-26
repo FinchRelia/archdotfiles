@@ -1,3 +1,4 @@
+set font "Hack 10"
 set selection-clipboard clipboard
 map U zoom in
 map D zoom out

@@ -20,6 +20,9 @@ gaps outer 10
 # Smart gaps (need at least one container)
 smart_gaps on
 
+# Borders
+client.focused  #f78701 #f78701 #f78701 #f78701 #f78701
+
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 

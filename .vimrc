@@ -7,6 +7,7 @@ runtime! archlinux.vim
 
 set autoindent
 set smartindent
+set expandtab " replace tab by spaces
 set undofile
 set number relativenumber
 set showmatch   " Show matching brackets
@@ -74,6 +75,14 @@ let g:limelight_conceal_ctermfg = 'gray'
 let g:limelight_conceal_ctermfg = 240
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+" Proper paste
+set pastetoggle=<F3>
+" Copy/paste widely
+vnoremap <C-c> "+y
+nnoremap <C-v> <F3>"+p<F3>
+inoremap <C-v> <Esc><F3>"+p<F3>
+vnoremap <C-v> <F3>"+p<F3>
 
 " Edit vimrc
 map <leader>v :edit $MYVIMRC<CR>
