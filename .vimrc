@@ -8,9 +8,13 @@ runtime! archlinux.vim
 set autoindent
 set smartindent
 set expandtab " replace tab by spaces
+set tabstop=4  " TAB width
+set shiftwidth=4  " Indents width
+set softtabstop=4  " TAB column number
 set undofile
 set number relativenumber
 set showmatch   " Show matching brackets
+set incsearch   " reql time search
 filetype plugin indent on
 set updatetime=750
 set encoding=utf-8
