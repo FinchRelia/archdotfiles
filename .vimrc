@@ -115,5 +115,8 @@ let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
 
+" Markdown highlight
+let g:markdown_fenced_languages=['html', 'python', 'ruby', 'vim']
+
 " Save file w/o root permissions
 cnoremap w!! execute 'silent! write !doas tee % >/dev/null' <bar> edit!
