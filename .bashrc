@@ -43,6 +43,11 @@ PERL_LOCAL_LIB_ROOT="/home/syrell/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_
 PERL_MB_OPT="--install_base \"/home/syrell/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/syrell/perl5"; export PERL_MM_OPT;
 
+# Pyenv
+eval "$(pyenv init -)"
+# Poetry
+export PATH="$HOME/.poetry/bin:$PATH"
+
 # Ctrl+w delete only one word
 stty werase undef
 bind '\C-w:unix-filename-rubout'
