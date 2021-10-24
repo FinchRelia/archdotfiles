@@ -99,7 +99,7 @@ bindsym $mod+q kill
 # App launcher Rofi
 bindsym $mod+d exec --no-startup-id rofi -show run
 # Launch Rofi in drun mode with sudo
-bindsym --release Mod4+Mod1+d exec --no-startup-id rofi -show drun -run-command 'gksudo {cmd}'
+bindsym --release Mod4+Mod1+d exec --no-startup-id rofi -show drun -run-command 'doas {cmd}'
 
 # Emoji picker
 bindsym $mod+z exec --no-startup-id rofimoji
