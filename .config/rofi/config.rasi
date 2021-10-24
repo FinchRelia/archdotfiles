@@ -1,3 +1,5 @@
 configuration {
-	theme: "gruvbox.rasi";
+	theme: "~/.config/rofi/Themes/gruvbox.rasi";
 }
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
