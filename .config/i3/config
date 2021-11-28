@@ -97,7 +97,7 @@ bindsym $mod+Return exec --no-startup-id st
 bindsym $mod+q kill
 
 # App launcher Rofi
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show run -theme ~/.config/rofi/Themes/gruvbox.rasi
 # Launch Rofi in drun mode with sudo
 bindsym --release Mod4+Mod1+d exec --no-startup-id rofi -show drun -run-command 'doas {cmd}'
 
@@ -272,3 +272,4 @@ for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
+for_window [class="(?i)wireshark"] floating enable border normal
