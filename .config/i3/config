@@ -105,10 +105,10 @@ bindsym --release Mod4+Mod1+d exec --no-startup-id rofi -show drun -run-command 
 bindsym $mod+z exec --no-startup-id rofimoji
 
 # Ssh
-bindsym $mod+o exec --no-startup-id rofi -show ssh
+bindsym $mod+o exec --no-startup-id rofi -show ssh -theme ~/.config/rofi/Themes/gruvbox.rasi
 
 # Greenclip
-bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -theme ~/.config/rofi/Themes/gruvbox.rasi -run-command '{cmd}'
 exec --no-startup-id greenclip daemon &
 
 # Passmenu
