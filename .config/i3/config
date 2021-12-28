@@ -45,9 +45,9 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Media keys
-bindsym XF86AudioPlay exec --no-startup-id mpc toggle
-bindsym XF86AudioNext exec --no-startup-id mpc next
-bindsym XF86AudioPrev exec --no-startup-id mpc prev
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # Brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
