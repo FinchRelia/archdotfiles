@@ -62,10 +62,13 @@ call plug#begin()
  Plug 'airblade/vim-gitgutter'
  Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
  Plug 'tpope/vim-surround'
+ Plug 'valloric/youcompleteme'
 " rmarkdown related
  Plug 'vim-pandoc/vim-rmarkdown'
  Plug 'vim-pandoc/vim-pandoc'
  Plug 'vim-pandoc/vim-pandoc-syntax'
+ " LaTeX
+ Plug 'lervag/vimtex'
 call plug#end()
 
 " Footer theme
