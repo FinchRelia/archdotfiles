@@ -46,7 +46,7 @@ PERL_MM_OPT="INSTALL_BASE=/home/syrell/perl5"; export PERL_MM_OPT;
 # Pyenv
 eval "$(pyenv init -)"
 # Poetry
-export PATH="$HOME/.poetry/bin:$PATH"
+# export PATH="$HOME/.poetry/bin:$PATH"
 
 # Ctrl+w delete only one word
 stty werase undef
@@ -54,3 +54,6 @@ bind '\C-w:unix-filename-rubout'
 
 # Pass bash completion
 source /usr/share/bash-completion/completions/pass
+
+# Random pokemon
+pokemon-colorscripts -r
