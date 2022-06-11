@@ -53,7 +53,7 @@ font-3 = "coins:style=Regular;0"
 
 modules-left = i3 filesystem memory cpu
 modules-center = xwindow
-modules-right = updates-pacman-aurhelper crypto xbacklight pulseaudio wlan date xkeyboard battery
+modules-right = updates-pacman-aurhelper xbacklight pulseaudio wlan date xkeyboard battery
 
 tray-position = right
 tray-padding = 2
@@ -274,11 +274,6 @@ format-discharging-underline = ${colors.secondary}
 type = custom/script
 exec = ~/.config/polybar-scripts/updates-pacman-aurhelper.sh
 interval = 600
-
-[module/crypto]
-type = custom/script
-interval = 60
-exec = source ~/.config/polybar-scripts/crypto/vcrypto/bin/activate && ~/.config/polybar-scripts/crypto/pcrypto.py --base USD --coins btc ltc --display both
 
 [settings]
 screenchange-reload = true
