@@ -55,5 +55,10 @@ bind '\C-w:unix-filename-rubout'
 # Pass bash completion
 source /usr/share/bash-completion/completions/pass
 
+# Fzf completion
+source /usr/share/fzf/completion.bash
+source /usr/share/fzf/key-bindings.bash
+
+
 # Random pokemon
 pokemon-colorscripts -r
