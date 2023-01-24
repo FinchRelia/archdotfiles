@@ -1,0 +1,75 @@
+{     
+    // Apparence
+    //// Editeur
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+
+    //// Sidebar
+    "workbench.tree.indent": 15,
+    "workbench.tree.renderIndentGuides": "always",
+
+    //// Code
+    "editor.renderWhitespace": "trailing",
+    "editor.occurrencesHighlight": false, 
+
+    // Thème
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 25,
+    "editor.fontFamily": "'JetBrains Mono', 'Consolas', 'Courier New', monospace",
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "workbench.colorCustomizations": {
+        "[Tokyo Night Storm]": {
+          "editor.selectionBackground": "#3D59A1",
+          "editor.selectionHighlightBackground": "#3D59A1"
+        },
+    },
+
+    // Ergonomie
+    "editor.wordWrap": "on",
+    "editor.suggest.insertMode": "replace", // L'autocomplétion remplace le mot en cours
+    "editor.acceptSuggestionOnCommitCharacter": false, // Evite que l'autocomplétion soit accepté lors d'un . par exemple
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.linkedEditing": true, // Quand on change un élément HTML, change la balise fermante
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "workbench.editor.enablePreview": false, // Un clic sur un fichier l'ouvre
+    "emmet.triggerExpansionOnTab": true, 
+
+     // Fichiers
+    "files.autoSave": "onFocusChange",
+    "files.defaultLanguage": "markdown",
+    "files.exclude": {
+        "**/.idea": true,
+        "**/.git": true,
+    },
+
+    // Terminal
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+    // Extensions
+    //// GitLens
+    "git.confirmSync": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    
+    //// LaTeX
+    "security.workspace.trust.untrustedFiles": "open",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools": [{
+        "name": "latexmk",
+        "command": "latexmk",
+        "args": [
+            "-xelatex",
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOC%"
+        ]
+    }
+    ],
+    
+}
