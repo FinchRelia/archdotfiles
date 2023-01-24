@@ -10,12 +10,14 @@ alias \
 
 # Colorize when possible
 alias \
-	ls='ls -hN --color=auto --group-directories-first' \
-	ll='ls -la' \
-	l.='ls -d .*' \
+	ls='exa -h --group-directories-first' \
+	ll='exa -la' \
+	l.='exa -d .*' \
 	grep='grep --color=auto' \
 	diff='diff --color=auto' \
-	ip='ip -color=auto'
+	ip='ip -color=auto' \
+    du='duf' \
+    dig='dog'
 
 # Shorteners
 alias \
@@ -27,7 +29,9 @@ alias \
 	SS='doas systemctl' \
 	ports='ss -tuln' \
 	path='echo -e ${PATH//:/\\n}' \
-	erasmus='cd /home/syrell/Documents/Scolaire/Erasmus/Cours' \
+	cours='cd /home/syrell/Documents/Scolaire/Polytech/5A' \
+    vpn='doas wg-quick up /etc/wireguard/wg0.conf' \
+    vpndown='doas wg-quick down /etc/wireguard/wg0.conf' \
 	worksync='rsync -avP /home/syrell/Documents/Scolaire/ rasp3:/home/arceus/Backup/Scolaire' # add -n for dry test and --delete to remove extra files from destination
 
 # Apps
@@ -35,8 +39,13 @@ alias \
 	yt='youtube-dl --add-metadata -ic' \
 	yta='youtube-dl --add-metadata -icx -f bestaudio/best'
 
-# Github
-alias gitlog='eval $(ssh-agent) && ssh-add ~/.ssh/laptop_ed'
+# Git
+alias \
+    ga='git add' \
+    gc='git commit -m' \
+    gpl='git pull' \
+    gp='git push' \
+    gitlog='eval $(ssh-agent) && ssh-add ~/.ssh/laptop_ed'
 
 # Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/archdotfiles/ --work-tree=$HOME'

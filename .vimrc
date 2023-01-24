@@ -8,9 +8,13 @@ runtime! archlinux.vim
 set autoindent
 set smartindent
 set expandtab " replace tab by spaces
+set tabstop=4  " TAB width
+set shiftwidth=4  " Indents width
+set softtabstop=4  " TAB column number
 set undofile
 set number relativenumber
 set showmatch   " Show matching brackets
+set incsearch   " reql time search
 filetype plugin indent on
 set updatetime=750
 set encoding=utf-8
@@ -58,10 +62,13 @@ call plug#begin()
  Plug 'airblade/vim-gitgutter'
  Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
  Plug 'tpope/vim-surround'
+ Plug 'valloric/youcompleteme'
 " rmarkdown related
  Plug 'vim-pandoc/vim-rmarkdown'
  Plug 'vim-pandoc/vim-pandoc'
  Plug 'vim-pandoc/vim-pandoc-syntax'
+ " LaTeX
+ Plug 'lervag/vimtex'
 call plug#end()
 
 " Footer theme
@@ -110,6 +117,9 @@ autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 let &t_SI = "\<Esc>[6 q"
 let &t_SR = "\<Esc>[4 q"
 let &t_EI = "\<Esc>[2 q"
+
+" Markdown highlight
+let g:markdown_fenced_languages=['html', 'python', 'ruby', 'vim']
 
 " Save file w/o root permissions
 cnoremap w!! execute 'silent! write !doas tee % >/dev/null' <bar> edit!
